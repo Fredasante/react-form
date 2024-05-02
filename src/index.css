@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.3rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.3rem;
+}
+
+.instructions {
+  font-size: 0.75em;
+  background: #003035;
+  padding: 5px 10px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: black;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+button {
+  background: #002428;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
