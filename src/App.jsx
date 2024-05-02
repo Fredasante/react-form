@@ -1,11 +1,25 @@
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from "react-router-dom";
 import Register from "./Register";
+import Login from "./Login";
+import Homepage from "./Homepage";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route>
+      <Route path="/" element={<Homepage />}></Route>
+      <Route path="/login" element={<Login />}></Route>
+      <Route path="/register" element={<Register />}></Route>
+    </Route>
+  )
+);
 
 function App() {
-  return (
-    <div className="bg-[#135D66] p-6 w-full text-white m-auto max-w-[420px] min-h-[400px] flex justify-center">
-      <Register />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
