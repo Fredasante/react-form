@@ -7,12 +7,12 @@ const Homepage = () => {
       <h1 className="text-2xl font-bold">Welcome to the Homepage</h1>
 
       <div className="flex justify-center gap-5 mt-8">
-        <button>
-          <Link to={"/login"}>login</Link>
-        </button>
-        <button>
-          <Link to={"/register"}>Register</Link>
-        </button>
+        <Link to={"/login"}>
+          <button>login</button>
+        </Link>
+        <Link to={"/register"}>
+          <button>Register</button>
+        </Link>
       </div>
     </div>
   );
